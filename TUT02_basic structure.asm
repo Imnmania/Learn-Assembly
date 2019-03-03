@@ -5,19 +5,20 @@
     ; WHERE ALL THE VARIABLES WILL BE DECLARED    
     
 .CODE
-    ;CODE SEGMENT
+;CODE SEGMENT
     
-    MAIN PROC ;INT MAIN
-        ;STATEMENT
-        ;STATEMENT
+MAIN PROC ;INT MAIN
+   ; CODE STATEMENT
         
-        
-        MOV AH, 4CH
-        INT 21H
-    MAIN ENDP
+   MOV BH , 4
+   MOV BL , 5
+   
+   ADD BH , BL
+
+   MAIN ENDP
     
     
     
     
-END MAIN
-    ;EXIT(0)
+END MAIN ; RETURN 0
+    
